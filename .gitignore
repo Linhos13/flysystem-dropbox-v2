@@ -4,4 +4,4 @@ docs
 /vendor/
 composer.lock
 /.idea/
-/nbproject/private/
+/nbproject/*
