@@ -554,6 +554,7 @@ class DropboxClient
             $response = $this->client->post("{$this->apiContentUrl}{$this->apiEndpoint}", [
                 'headers' => $this->setupDropboxHeaders(),
                 'body'    => !empty($this->content) ? $this->content : '',
+                'stream' => true,
             ]);
         } catch (HttpClientException $exception) {
             throw $this->determineException($exception);
